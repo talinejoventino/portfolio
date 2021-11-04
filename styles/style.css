@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+h2 {
+  color: rgba(138, 0, 52, 1);
+  font-size: 2rem;
+}
+
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-image: url(../images/banner.jpg);
+  width: 100%;
+  height: 38rem;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 2rem;
+  justify-content: center;
+  color: rgba(242, 244, 247, 1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.3rem;
+  font-size: 1.5rem;
+  background-color: rgba(231, 30, 91, 1);
+  color: rgba(242, 244, 247, 1);
+}
+
+.container_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.image_about img {
+  width: 18rem;
+  border-radius: 1rem;
+}
+
+.article_about {
+  padding-left: 2rem;
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+.article_about h2 {
+  padding: 1rem;
+}
+
+.article_about p {
+  padding: 1rem;
+  text-align: justify;
+}
+#section_projects {
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.container_projects {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  width: 60%;
+  justify-content: center;
+}
+
+.container_projects img {
+  width: 22rem;
+  border-radius: 0.8rem;
+  height: 12rem;
+}
+
+.about_projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.about_projects p {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.container_formation {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.container_skills {
+  width: 50%;
+  display: contents;
+}
+.container_skills img {
+  width: 40rem;
+}
+.list_formation {
+  width: 40%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgba(242, 244, 247, 1);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+}
+.footer {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(5, 5, 5, 1);
+  color: rgba(242, 244, 247, 1);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 620px){
+  .header{
+    font-size: 1.5rem;
+    justify-content: end;
+    background-position: right;
+  }
+  .article_about{
+    padding-left: 0;
+    width: 100%;
+  }
+  .container_about {
+    flex-direction: column;
+  }
+  .container_projects{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .container_formation{
+    flex-direction: column-reverse;
+  }
+  .container_skills img {
+    width: 30rem;
+  }
+  .list_formation{
+    width: 100%;
+  }
+}
